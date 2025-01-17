@@ -282,3 +282,54 @@ img {
 .btn.bg--primary{
   background: #ffa700;
 }
+
+/* ABOUT ME */
+
+.about{
+  padding-left: 30rem;
+  padding-right: 30rem;
+  padding-top:10rem;
+  background-color: #ffffff;
+}
+.about .about__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2pxrem;
+  align-items: center;
+  margin-top:2rem;
+}
+.about .about__text h5{
+  color: #ffa700;
+  font-weight: 600;
+  font-size:2rem;
+}
+.about .about__text p{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: justify;
+}
+
+/* MOBILE ABOUT ME */
+@media screen and (max-width:500px){
+  .about{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .about .about__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about .about_text{
+    order: 2;
+  }
+  .about .about__text h5{
+    text-align: center;
+    padding-top:1rem;
+  }
+  
+  .about img{
+    width: 20rem;
+    margin: 0 auto;
+  }
+}
