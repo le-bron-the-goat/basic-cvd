@@ -714,29 +714,82 @@ img {
 
 /* UPDATES */
 
-.update {
-  background-color: #ffffff;
-  padding-top: 13rem;
-  padding-bottom: 6rem;
+.updates{
+  padding-top:13rem;
+  padding-bottom:5rem;
+  background:#ffffff;
 }
-.update .update__title h1 {
-  font-size: 4rem;
-  font-weight: 600;
-  color: #ffa700;
+.updates  .updates__title h2{
+  color:#ffa700;
+  font-size:5rem;
+  font-weight:600;
 }
-.update .update__title h2 {
-  font-size: 2rem;
-  font-weight: 540;
+.updates  .updates__title p{
+  font-size:1.8rem;
+  padding-bottom: 5rem;
 }
-.update .update__wrapper .update__text {
+.updates .updates__wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+.updates .updates__post p{
+  font-size:1.5rem;
+  text-align:justify;
+  padding-bottom:3rem;
+}
+.updates .updates__post ul{
+  display:flex;
+  flex-direction: row;
+  gap:2rem;
+  padding-top:1.5rem;
+}
+.updates .updates__post h4{
+  color:#ffa700;
+  font-size:2rem;
+  font-weight:700;
+  padding-bottom:2rem;
+}
+.updates .updates__post a{
+  color:#ffa700
+}
+.updates .updates__category {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-left:6rem;
+  margin-bottom:30px;
 }
-.update img{
-  width: 100rem;
+.updates .updates__category .name h5{
+  color:#ffa700;
+  font-size:2rem;
+  font-weight:600;
 }
-.update .update__text{
-  line-height: 2;
-  text-align: justify;
-  display: flex;
+.updates .updates__category .name p{
+  padding: 1rem;
+}
+.updates .updates__category .number p{
+  padding:1rem;
+}
+.updates .updates__category .number{
+  padding-top:2.8rem;
+}
+.updates .recent__card{
+  display:flex;
+  padding-left:6rem;
+  padding-top:2rem;
+  gap:30px;
+}
+.updates  .updates__recent h5{
+  color: #ffa700;
+  font-size:2rem;
+  font-weight:600;
+  padding-left:6rem;
+  padding-bottom: 4rem;
+}
+.updates .recent__card h6{
+  font-size:1.6rem;
+  font-weight:600;
+  margin-bottom:2.5rem;
+}
+.updates .recent__card p{
+  padding-bottom:0rem;
 }
