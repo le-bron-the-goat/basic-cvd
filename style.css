@@ -826,9 +826,6 @@ display: none;
 .updates .recent__card p{
   padding-bottom:0rem;
 }
-.updates .updates__buttons{
-  margin-left:6rem;
-}
 .updates .updates__buttons h5{
   color:#ffa700;
   font-size:2rem;
@@ -867,6 +864,9 @@ display: none;
   .updates .updates__wrapper{
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .updates .updates__button{
+    margin-left: 1rem;
   }
   /* UPDATE PAGE */
   }
