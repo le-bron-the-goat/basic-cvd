@@ -69,10 +69,12 @@
                     </div>
                     <div>
                         <div class="contact__info">
-                            <p>NAME</p>
-                            <p>EMAIL</p>
-                            <div class="message"><p>MESSAGE</p></div>
-                            <a href="" class="btn bg--primary">SEND MESSAGE</a>
+                            <form action="#" method="POST">
+                                <input type="text" name="name" placeholder="NAME" required>
+                                <input type="email" name="email" placeholder="EMAIL" required>
+                                <textarea name="message" rows="5" placeholder="MESSAGE"></textarea>
+                                <button type="submit">Send Message</button>
+                            </form>
                         </div>
                     </div>
                 </div>
