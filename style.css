@@ -454,39 +454,52 @@ img {
 }
 .footer .footer__wrapper {
   padding: 1rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
 }
 .footer .footer__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.footer .footer_social ul {
+.footer .footer__social ul {
   display: flex;
   flex-direction: row;
 }
-.footer .footer_social ul li a {
+.footer .footer__social ul li a {
   color: darkgray;
-  padding-right: 1rem;
+  margin-right: 1rem;
 }
 .footer .footer__wrapper p {
   color: darkgray;
   font-size: 1.5rem;
+  gap: 10rem;
   display: flex;
   justify-content: end;
 }
-.footer .footer_social {
+.footer .footer__social{
   display: flex;
-  justify-content: space-between;
+  align-content: center;
 }
-
 @media screen and (max-width: 500px) {
-  .footer .footer_social ul li a {
-    font-size: 1.2rem;
+  .footer .footer__social ul li a{
+    font-size: 1.5rem;
   }
-  .footer .footer__social {
-    text-align: center;
+  .footer .footer__social ul{
+    display: flex;
+    justify-content: center;
+  }
+    .footer .footer__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__social{
+    display: flex;
+    flex-direction: column;
   }
 }
-
 /* ABOUT ME PAGE */
 .abt {
   padding-left: 30rem;
@@ -734,7 +747,15 @@ display: none;
 }
 .updates .updates__wrapper{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:2.5fr 1.5fr;
+}
+.updates .updates__item{
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+}
+.updates .updates__item:last-child{
+  border-bottom: #ffffff;
 }
 .updates .updates__post p{
   font-size:1.5rem;
@@ -758,11 +779,11 @@ display: none;
 }
 .updates .updates__category {
   display: grid;
-  grid-template-columns: 2.5fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
   margin-left:6rem;
+  margin-bottom:30px;
   padding-bottom: 5rem;
-  border-bottom: 1px solid darkgray;
-  gap: 30px;
+  border-bottom: 1px solid lightgrey;
 }
 .updates .updates__category .name h5{
   color:#ffa700;
@@ -774,13 +795,19 @@ display: none;
 }
 .updates .updates__category .number p{
   padding:1rem;
+  display: flex;
+  justify-content: end;
 }
 .updates .updates__category .number{
   padding-top:2.8rem;
 }
+.updates .updates__recent{
+  padding-bottom:8rem;
+  margin-left:6rem;
+  border-bottom: 1px solid lightgrey;
+}
 .updates .recent__card{
   display:flex;
-  padding-left:6rem;
   padding-top:2rem;
   gap:30px;
 }
@@ -788,45 +815,60 @@ display: none;
   color: #ffa700;
   font-size:2rem;
   font-weight:600;
-  padding-left:6rem;
   padding-bottom: 4rem;
+  margin-top:10rem;
 }
 .updates .recent__card h6{
   font-size:1.6rem;
   font-weight:600;
-  margin-bottom:2.5rem;
+  margin-bottom:2rem;
 }
 .updates .recent__card p{
   padding-bottom:0rem;
 }
-.updates .tags h5{
-  padding-right: 30rem;
+.updates .updates__buttons{
+  margin-left:6rem;
 }
-.updates .tags{
-  padding-top: 8rem;
-  margin-right: 5rem;
+.updates .updates__buttons h5{
+  color:#ffa700;
+  font-size:2rem;
+  font-weight:600;
+  margin-top:7rem;
+  padding-bottom: 1.5rem;
 }
-.updates .tags .btn{
-  display: inline-block;
-  margin-left: 5rem;
-  margin-bottom: 1.5rem;
+.updates .updates__buttons .btn{
+  display:inline-block;
+  padding:1.5rem 2rem;
+  border-radius:5rem;
+  color:#2b2b2b;
+  background: #ffffff;
+  border:1.5px solid #2b2b2b;
+  margin-left:3rem;
+  margin-bottom:1.5rem;
 }
-.updates .updates__items{
-  border-bottom: 1px solid darkgray;
-  margin-left: 3rem;
-}
+.updates .updates__buttons .btn:hover{
+  background-color: #2b2b2b;
+  color:#ffffff;
+} 
 /* MOBILE UPDATE */
 @media screen and (max-width:500px){
   .updates{
     padding-left:2rem;
     padding-right:2rem;
   }
+  .updates .tags{
+    padding-top: 1rem;
+    margin-left: 0rem;
+  }
+  .updates .tags .btn{
+    margin-left:0rem;
+    margin-right:2rem;
+  }
   .updates .updates__wrapper{
     display: grid;
     grid-template-columns: 1fr;
   }
-  .updates .updates__item{
-    margin-bottom:0rem;
+  /* UPDATE PAGE */
   }
   .updates .updates__item ul {
     font-size: 1.5rem;
@@ -843,21 +885,11 @@ display: none;
   }
   .updates .updates__recent h5{
     padding-left: 0rem;
-    margin-top:6rem;
-  }
-  .updates .recent__card{
-    padding-left:0rem;
-  }
-  .updates .updates__buttons h5{
-    margin-top:6rem;
-  }
-  .updates .updates__buttons{
-    margin-left: 0rem;
+    margin-top:3rem;
   }
   .updates .updates__item:last-child{
     border-bottom: 1px solid lightgray;
   }
-}
 /* CONTACT PAGE */
 .contact{
   padding-top:20rem;
